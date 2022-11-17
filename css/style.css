@@ -1,9 +1,88 @@
+:root {
+  --cream: #F2EEE4;
+  --blue: #3483A8;
+  --yellow: #D9AE00;
+  --light-green: #8BB0A6;
+  --red: #9D363D;
+  --dark-green: #315052;
+  --beige: #F3E8BF;
+  --gray: #545454;
+}
+
+body {
+    color: var(--gray)!important;
+}
+
+/* Banner */
+#intro-example {
+  height: 400px;
+}
+
+/* Height for devices larger than 992px */
+@media (min-width: 992px) {
+  #intro-example {
+    height: 600px;
+  }
+}
+
+.product-img {
+  box-shadow: var(--blue) 10px 10px;
+  width: 100%;
+  height: auto;
+}
+
+.subtitle-light {
+  color: var(--yellow)!important;
+}
+
+.subtitle-dark {
+  color: var(--dark-green)!important;
+}
+
 .bg-img {
     width: 100%;
     height: auto;
 }
 
-.features-img {
+.features-img, .types-img, .budget-img  {
     width: 100%;
-    height: inherit;
+    height: auto;
 }
+
+.prototype-img {
+    width: 50%;
+    height: auto;
+}
+
+.creator-img {
+  box-shadow: var(--blue) 10px 10px;
+  width: 100%;
+  height: auto;
+}
+
+/* Timeline */
+/* Source: https://mdbootstrap.com/docs/standard/extended/timeline/ */
+.timeline {
+    border-left: 1px solid var(--blue);
+    position: relative;
+    list-style: none;
+  }
+  
+  .timeline .timeline-item {
+    position: relative;
+  }
+  
+  .timeline .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+  
+  .timeline .timeline-item:after {
+    background-color: var(--blue);
+    left: -38px;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+  }
