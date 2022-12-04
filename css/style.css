@@ -44,9 +44,14 @@ body {
     height: auto;
 }
 
-.features-img, .types-img, .budget-img  {
+.features-img, .types-img  {
     width: 100%;
     height: auto;
+}
+.budget-img {
+  width: 75%;
+  max-width: 75%;
+  height: auto;
 }
 
 .prototype-img {
