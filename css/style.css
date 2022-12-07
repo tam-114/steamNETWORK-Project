@@ -57,6 +57,8 @@ body {
 .prototype-img {
     width: 50%;
     height: auto;
+    border-left: 1px solid var(--blue);
+    border-right: 1px solid var(--blue);
 }
 
 .creator-img {
